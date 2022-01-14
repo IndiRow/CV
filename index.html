@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Curriculum Vitae</title>
+  <link rel="stylesheet" href="css/styleviz.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="img/logoviz3.png" class="graficlogo" alt="logo"></a>
+    </div>
+    <nav>
+      <div class="topnav" id="myTopnav">
+        <a href="index.html">HOME</a>
+        <a href="#about">ABOUT ME</a>
+        <a href="#gallery">MY WORKS</a>
+        <a href="https://github.com/IndiRow">GITHUB</a>
+        <a href="#contacts">CONTACTS</a>
+        <a id="menu" href="#" class="icon">&#9776;</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="main" id="about">
+    <div class="gallery-title">
+      <h3>ABOUT ME</h3>
+    </div>
+    <img src="img/ilshat_ava.png" class="mw-100" alt="">
+    <p>
+      Hello World!<br>My name is Ilshat Niyazov!<br> For now i'm student of 4th course in Ala-Too university (Computer Science Department). Also I'm working for "Optima Bank".<br> Briefly about my skills:<br> Upper Intermediate English level, HTML, CSS, JS, Python (basics) <br>
+    </p>
+  </div>
+
+  <div id="gallery">
+    <div class="gallery-title">
+        <h3>MY WORKS</h3>
+      </div>
+    <div class="slider-block">  
+      <div class="wrapper">
+
+      <div class="slider">
+        <div class="slider__item filter">
+          <a href="https://indirow.github.io/pb-intership/"><img src="img/work1.PNG" alt=""></a>
+        </div>
+        <div class="slider__item">
+          <a href="https://indirow.github.io/HCIFinal/"><img src="img/work22.jpg" alt=""></a>
+        </div>
+        <div class="slider__item filter">
+          <a href="https://indirow.github.io/WPWorld/"><img src="img/work3.PNG" alt=""></a>
+        </div>
+        <div class="slider__item">
+          <a href="https://github.com/IndiRow/MADMid"><img src="img/work4.jpg" alt=""></a>
+        </div>
+        <div class="slider__item">
+          <a href="https://github.com/IndiRow/SoftwareFinal"><img src="img/work5.jpg" alt=""></a>
+        </div>
+      </div>
+      </div>
+  </div>
+  </div>
+
+  <footer>
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="#about">ABOUT ME</a>
+      <a href="#gallery">MY WORKS</a>
+      <a href="https://github.com/IndiRow">GITHUB</a>
+      <a href="#">CONTACTS</a>
+    </nav>
+    <div id="contacts" class="social">
+      <a href="https://www.facebook.com/ilshat.niyazov"><img src="img/face.png" alt=""></a>
+      <a href="mailto:ilshatn2000@gmail.com"><img src="img/em.png" alt=""></a>
+    </div>
+  </footer>
+
+
+
+  <script type="text/javascript">
+ $(document).ready(function(){
+    $("#myTopnav").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
+</script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/script.js"></script>
+  </div>
+</body>
+
+
+
+
+</html>
